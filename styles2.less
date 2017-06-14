@@ -1,0 +1,148 @@
+@light-color:#f2f2f2;
+@dark-color:#A9A9A9;
+@darker-color:#808080;
+@primary-color: orangered;
+
+.border (@width: 1, @style: solid, @color: black) {
+    border-width: @width;
+    border-style: @style;
+    border-color: @color;
+} 
+
+.top-padding {
+    padding: 5% 0;
+} 
+
+.list-style-none {
+    list-style: none;
+} 
+
+/*navbar*/
+#navigation {
+
+    .logo {
+        .border(3px, solid, black);
+        width: 20%;
+        text-align: center;
+        color:@primary-color;
+    }
+  .nav-bar-list {
+        border-bottom: 3px solid orangered;
+        margin: 1em;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+}
+
+// About
+
+#about {
+    .photo {
+        height: 1%;
+    }
+    .about {
+        margin-top: 30%;
+        margin-left: -18%;
+}
+    .about-info  {
+        font-size: 377%;
+        color: orangered;
+    }
+    .about-location {
+        font-size: 134%;
+        font-weight: bold;
+    }
+
+}
+
+//intro
+
+#introduction {
+
+    .introduction {
+        background-color:@light-color;
+    }
+    .intro-left {
+        margin-top: 8%;
+    }
+    .hello {
+        font-size:3.5em;
+        font-weight: bold;
+    }
+     .details {
+        margin-top: 7%;
+        font-size: 1.2em;
+    }
+     .box {
+        width: 50%;
+        height: 30%;
+        border: 2px black solid;
+        margin-top: 4em;
+        margin-right: 5em;
+        background-color: white;
+        margin-bottom: 6%;
+        margin-left: 1%;
+    }
+    .box-text {
+        padding: 30px;
+        line-height: 20px;
+    }
+
+}
+
+//experience
+#experinece {
+
+    contain{
+
+        h3 {
+            font-weight: bold;
+            border-bottom: 2px solid black;
+            padding-bottom: 3%;
+        }
+    }
+}
+      
+//work
+
+.project-images {
+    height: 40% !important;
+}
+
+//contact
+
+#contact {
+    .greet {
+        font-size: 3em; 
+        font-weight:lighter;
+    }
+
+    .email-info {
+        text-align: right;   
+    }
+
+    form {
+        margin-left: 20%;
+    
+    }
+}
+
+//footer
+
+#footer {
+    .footer{
+        margin-left: 42%;
+    }
+    .images {
+        width: 3%;
+        vertical-align: middle;
+    }
+    .bye {
+        font-size: .75em;
+        padding: 0 10px;
+    }
+
+}
