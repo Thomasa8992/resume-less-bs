@@ -1,17 +1,44 @@
-.top-padding {
-  padding: 5% 0;
+.top-margin {
+  margin: 5% 0;
 }
 .list-style-none {
   list-style: none;
 }
+.uppercase {
+  text-transform: uppercase;
+}
+.text-align-right {
+  text-align: right;
+}
+.hr {
+  height: 2px;
+  border: 2px solid black;
+  background-color: black;
+}
+.primary-color {
+  color: orangered;
+}
+.light-grey {
+  background-color: #f2f2f2;
+}
+.darker-grey {
+  color: #808080;
+}
+.dark-grey {
+  color: #A9A9A9;
+}
 /*navbar*/
+#navigation .nav-container {
+  transform: translateX(-9%);
+}
 #navigation .logo {
-  border-width: 3px;
+  border-width: 0.2em;
   border-style: solid;
   border-color: black;
-  width: 20%;
+  width: 27%;
   text-align: center;
   color: orangered;
+  transform: translateX(35%);
 }
 #navigation .nav-bar-list {
   border-bottom: 3px solid orangered;
@@ -21,26 +48,50 @@
   color: inherit;
   text-decoration: none;
 }
-#about .photo {
-  height: 1%;
+#about .about-container {
+  margin-bottom: 15%;
+}
+#about img {
+  width: 30%;
+  height: 20em;
+  transform: translateX(42%);
 }
 #about .about {
-  margin-top: 30%;
-  margin-left: -18%;
+  position: relative;
+  top: 50%;
+  transform: translateX(8.5%) translateY(68%);
 }
 #about .about-info {
   font-size: 377%;
   color: orangered;
 }
 #about .about-location {
-  font-size: 134%;
+  font-size: 120%;
   font-weight: bold;
+}
+@media (max-width: 600px) {
+  #about .about-info {
+    font-size: 140%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #about .about-location {
+    font-size: 140%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #about img {
+    width: 85%;
+    transform: translateX(9%);
+  }
 }
 #introduction .introduction {
   background-color: #f2f2f2;
 }
 #introduction .intro-left {
-  margin-top: 8%;
+  position: relative;
+  top: 5em;
+  right: 11em;
 }
 #introduction .hello {
   font-size: 3.5em;
@@ -58,32 +109,79 @@
   margin-right: 5em;
   background-color: white;
   margin-bottom: 6%;
-  margin-left: 1%;
 }
 #introduction .box-text {
   padding: 30px;
   line-height: 20px;
 }
-#experinece contain h3 {
-  font-weight: bold;
-  border-bottom: 2px solid black;
-  padding-bottom: 3%;
+@media only screen and (max-width: 999px) {
+  #introduction .intro-left {
+    position: relative;
+    top: 5em;
+    right: 8em;
+  }
+}
+@media only screen and (max-width: 999px) {
+  #introduction .box {
+    width: 79%;
+    transform: translateY(5%) translateX(13%);
+    position: relative;
+  }
+}
+@media only screen and (max-width: 999px) {
+  #introduction .details {
+    text-align: center;
+  }
 }
 .project-images {
-  height: 40% !important;
+  height: 30% !important;
 }
 #contact .greet {
   font-size: 3em;
-  font-weight: lighter;
+  font-weight: bold;
 }
 #contact .email-info {
   text-align: right;
 }
-#contact form {
-  margin-left: 20%;
+#contact .message {
+  height: 150px;
+}
+#contact button {
+  height: 30px;
+  width: 60px;
+  color: white;
+  background-color: orangered;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  transform: translateX(1750%);
+}
+#contact input {
+  height: 30px;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 600px) {
+  #contact input {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #contact .message {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #contact button {
+    transform: translateX(569%);
+  }
 }
 #footer .footer {
-  margin-left: 47%;
+  width: 80%;
+  text-align: center;
 }
 #footer .images {
   width: 3%;

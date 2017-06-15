@@ -9,22 +9,57 @@
     border-color: @color;
 } 
 
-.top-padding {
-    padding: 5% 0;
+.top-margin {
+    margin: 5% 0;
 } 
 
 .list-style-none {
     list-style: none;
 } 
 
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.hr {
+    height: 2px;
+    border: 2px solid black;
+    background-color: black;
+}
+
+.primary-color {
+    color: @primary-color;
+}
+
+.light-grey {
+    background-color: @light-color;
+}
+
+.darker-grey {
+    color:	@darker-color;
+}
+
+.dark-grey {
+    color: @dark-color;	
+}
+
 /*navbar*/
 #navigation {
-
+    .nav-container {
+        transform: translateX(-9%);
+    }
     .logo {
-        .border(3px, solid, black);
-        width: 20%;
+        border-width: 0.2em;
+        border-style: solid;
+        border-color: black;
+        width: 27%;
         text-align: center;
-        color:@primary-color;
+        color: orangered;
+        transform: translateX(35%);
     }
   .nav-bar-list {
         border-bottom: 3px solid orangered;
@@ -37,26 +72,48 @@
 
 }
 
-// About
 
-#about {
-    .photo {
-        height: 1%;
+#about { 
+    .about-container {
+        margin-bottom: 15%;
+
+    }
+    img {
+        width: 30%;
+        height: 20em;
+        transform: translateX(42%) 
     }
     .about {
-        margin-top: 30%;
-        margin-left: -18%;
-}
+        position: relative;
+        top: 50%;
+        transform: translateX(8.5%) translateY(68%);
+    }
     .about-info  {
         font-size: 377%;
         color: orangered;
     }
     .about-location {
-        font-size: 134%;
+        font-size: 120%;
         font-weight: bold;
     }
-
+    @media (max-width: 600px) {
+        .about-info  {
+            font-size: 140%;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .about-location  {
+        font-size: 140%;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        img  {
+            width: 85%;
+            transform: translateX(9%);
+        }
+    }
 }
+
 
 //intro
 
@@ -66,7 +123,10 @@
         background-color:@light-color;
     }
     .intro-left {
-        margin-top: 8%;
+        position: relative;
+        top: 5em;
+        right: 11em;
+        
     }
     .hello {
         font-size:3.5em;
@@ -84,32 +144,38 @@
         margin-right: 5em;
         background-color: white;
         margin-bottom: 6%;
-        margin-left: 1%;
     }
     .box-text {
         padding: 30px;
         line-height: 20px;
     }
-
-}
-
-//experience
-#experinece {
-
-    contain{
-
-        h3 {
-            font-weight: bold;
-            border-bottom: 2px solid black;
-            padding-bottom: 3%;
+     @media only screen and (max-width: 999px) {
+        .intro-left  {
+            position: relative;
+            top: 5em;
+            right: 8em;
+        }
+    }
+    @media only screen and (max-width: 999px) {
+        .box  {
+        width: 79%;
+        transform: translateY(5%) translateX(13%);
+        position: relative;
+        }
+    }
+    @media only screen and (max-width: 999px) {
+        .details  {
+            text-align: center;
         }
     }
 }
+
+//experience
       
 //work
 
 .project-images {
-    height: 40% !important;
+    height: 30% !important;
 }
 
 //contact
@@ -117,24 +183,55 @@
 #contact {
     .greet {
         font-size: 3em; 
-        font-weight:lighter;
+        font-weight:bold;
     }
 
     .email-info {
         text-align: right;   
     }
 
-    form {
-        margin-left: 20%;
-    
+    .message {
+     height: 150px;
     }
+
+    button {
+        height: 30px;
+        width: 60px;
+        color:white;
+        background-color: orangered;
+        border-radius: 5px;
+        border: none;
+        font-size: 1em;
+        transform: translateX(1750%);
+     }
+
+     input {
+        height: 30px;
+        margin-bottom: 15px;
+    }
+     @media only screen and (max-width: 600px) {
+         input {
+            .border(1px, solid, black)
+        }
+    } 
+    @media only screen and (max-width: 600px) {
+         .message {
+            .border(1px, solid, black)
+        }
+    } 
+     @media only screen and (max-width: 600px) {
+         button {
+            transform: translateX(569%);
+        }
+    } 
 }
 
 //footer
 
 #footer {
     .footer{
-        margin-left: 42%;
+        width:80%;
+        text-align: center;
     }
     .images {
         width: 3%;
